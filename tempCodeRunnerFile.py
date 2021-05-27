@@ -1,1 +1,1 @@
-self.outLabel.setPixmap(QtGui.QPixmap("emojis/angry.png"))
+global maxindex

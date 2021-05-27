@@ -78,39 +78,13 @@
      <string>BIỂU CẢM TƯƠNG ỨNG</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="fromIMG">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>240</y>
-      <width>95</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Từ ảnh</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>260</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Chọn ảnh</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>589</x>
-      <y>289</y>
+      <y>169</y>
       <width>451</width>
-      <height>471</height>
+      <height>591</height>
      </rect>
     </property>
     <property name="font">
@@ -122,11 +96,21 @@
     <property name="title">
      <string>Kết quả</string>
     </property>
+    <widget class="QGraphicsView" name="graphicsView_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>400</width>
+       <height>400</height>
+      </rect>
+     </property>
+    </widget>
     <widget class="QLabel" name="outLabel">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>60</y>
+       <y>180</y>
        <width>400</width>
        <height>400</height>
       </rect>
@@ -134,10 +118,135 @@
      <property name="text">
       <string/>
      </property>
-     <property name="pixmap">
-      <pixmap>emojis/angry.png</pixmap>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>70</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>CẢM XÚC</string>
      </property>
     </widget>
+    <widget class="QLabel" name="eLabel">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>100</y>
+       <width>131</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>120</red>
+           <green>120</green>
+           <blue>120</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView_3">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>100</y>
+       <width>131</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>graphicsView_3</zorder>
+    <zorder>graphicsView_2</zorder>
+    <zorder>outLabel</zorder>
+    <zorder>label_4</zorder>
+    <zorder>eLabel</zorder>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
@@ -157,13 +266,36 @@
     <property name="title">
      <string>Đầu vào</string>
     </property>
-    <widget class="QRadioButton" name="fromVID">
+    <widget class="QGraphicsView" name="graphicsView">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>40</y>
-       <width>121</width>
-       <height>20</height>
+       <x>30</x>
+       <y>180</y>
+       <width>400</width>
+       <height>400</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inLabel">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>400</width>
+       <height>400</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fromVid">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>50</y>
+       <width>93</width>
+       <height>28</height>
       </rect>
      </property>
      <property name="font">
@@ -176,17 +308,23 @@
       <string>Từ live video</string>
      </property>
     </widget>
-    <widget class="QLabel" name="inLabel">
+    <widget class="QPushButton" name="fromImg">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>170</y>
-       <width>400</width>
-       <height>400</height>
+       <x>190</x>
+       <y>90</y>
+       <width>93</width>
+       <height>28</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="text">
-      <string/>
+      <string>Từ ảnh</string>
      </property>
     </widget>
    </widget>
@@ -195,8 +333,6 @@
    <zorder>label</zorder>
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
-   <zorder>fromIMG</zorder>
-   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
