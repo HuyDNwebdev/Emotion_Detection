@@ -217,6 +217,7 @@ class Ui_MainWindow(object):
     def fIMG(self):
         imagePath, _ = QFileDialog.getOpenFileName()
         pixmap = QtGui.QPixmap(imagePath)
+        pixmap = pixmap.scaledToWidth(400)
         self.inLabel.setPixmap(pixmap)
         self.inLabel.resize(pixmap.size())
         self.inLabel.adjustSize()
