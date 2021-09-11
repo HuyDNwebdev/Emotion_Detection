@@ -63,11 +63,11 @@ Khi button from Vid được nhấn, sẽ connect tới hàm fVid.
 Và đây là kết quả khi ta nhấn vào nút “Từ live video”:
  
 Hàm fIMG ta cài đặt gần như tương tự, chỉ khác là sử dụng getOpenFileName từ QFileDialog của PyQt5 để mở ảnh từ máy tính và xử lý ảnh như đã giải thích ở trên.
-Và đây là kết quả khi nhấn vào nút “Từ ảnh” và chọn một ảnh từ máy tính:
+Khuyến cáo: sử dụng ảnh dạng vuông (cao xấp xỉ rộng) có đầy đủ mặt, chụp chính diện để có kết quả chính xác .
  
 IV.	Hướng dẫn sử dụng và đánh giá ứng dụng
 4.1.	Hướng dẫn sử dụng:
-Chạy file “final.py” cùng thư mục chứa file “model.h5”, file “haarcascade_frontalface_default.xml” và thư mục “emojis”. Sau đó chọn nguồn ảnh đầu vào là từ live video hay từ ảnh máy tính qua hai nút chức năng và hình ảnh emoji tương ứng sẽ được hiển thị song song ở phần kết quả.
+Cài đặt tất cả các package cần thiết. Chạy file “final.py” cùng thư mục chứa file “model.h5” (nếu có thiếu package thì cài thêm), file “haarcascade_frontalface_default.xml” và thư mục “emojis”. Sau đó chọn nguồn ảnh đầu vào là từ live video hay từ ảnh máy tính qua hai nút chức năng và hình ảnh emoji tương ứng sẽ được hiển thị song song ở phần kết quả.
  
 4.2.	Đánh giá ứng dụng
 -	Ưu điểm: Nhận diện tốt những cảm xúc dễ nhận thấy như tức giận, vui vẻ hay ngạc nhiên, hiển thị kết quả nhanh, độ trễ cực thấp
