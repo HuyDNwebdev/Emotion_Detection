@@ -196,7 +196,7 @@ class Ui_MainWindow(object):
             ret, frame = cap.read()
             if not ret:
                 break
-            bounding_box = cv2.CascadeClassifier('D:\Python\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml')
+            bounding_box = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
             gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             num_faces = bounding_box.detectMultiScale(gray_frame)
 
@@ -222,7 +222,7 @@ class Ui_MainWindow(object):
         self.inLabel.adjustSize()
         frame = cv2.imread(imagePath)
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        bounding_box = cv2.CascadeClassifier('D:\Python\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml')
+        bounding_box = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         num_faces = bounding_box.detectMultiScale(gray_frame)
         for (x, y, w, h) in num_faces:
             cv2.rectangle(frame, (x, y-50), (x+w, y+h+10), (255, 0, 0), 2)
